@@ -1,0 +1,20 @@
+header img {
+    width: 100px; /* Ajusta el ancho según tus necesidades */
+    height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+    margin-right: 10px; /* Espaciado entre el logotipo y el título */
+}
+
+body {
+    background-color: rgba(0, 206, 209, 0.5);
+    background-image: url('Carpeta/fondo.jpg');
+    color: white;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" a la fuente profesional deseada */
+}
+
+h1 {
+    background-color: rgba(0, 206, 209, 0.5);
+    color: white;
+    font-family: "Arial", sans-serif; /* Cambia "Arial" a la fuente profesional deseada */
+}
+
+
