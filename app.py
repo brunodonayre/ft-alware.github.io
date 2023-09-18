@@ -15,6 +15,11 @@ def inicio():
     return 'Bienvenido a la página de inicio'
 
 # Ruta para el formulario de inicio de sesión
+
+@app.route('/static/<path:filename>')
+def static_files(filename):
+    return send_from_directory('static', filename)
+
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
@@ -25,15 +30,16 @@ def login():
         if usuario in usuarios and usuarios[usuario] == contrasena:
             # Iniciar sesión y redirigir al usuario a una página protegida
             session['usuario'] = usuario
-            return redirect(url_for('pagina_protegida'))
+            #return redirect(url_for('index.html'))return redirect('/')
+            return redirect('/')
         else:
             # Credenciales incorrectas, mostrar un mensaje de error
             return 'Credenciales incorrectas. <a href="/login">Intenta de nuevo</a>'
 
-    return render_template('loggin.html')  # Muestra el formulario de inicio de sesión
+    return render_template('login.html')  # Muestra el formulario de inicio de sesión
 
 # Ruta para la página protegida (requiere inicio de sesión)
-@app.route('/pagina_protegida')
+@app.route('/index.html')
 def pagina_protegida():
     if 'usuario' in session:
         return f'Bienvenido, {session["usuario"]}! Esta es una página protegida.'
