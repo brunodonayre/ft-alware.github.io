@@ -1,7 +1,7 @@
 header img {
-    width: 100px; /* Ajusta el ancho según tus necesidades */
+    width: 200px; /* Ajusta el ancho según tus necesidades */
     height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-    margin-right: 10px; /* Espaciado entre el logotipo y el título */
+    margin-right: 20px; /* Espaciado entre el logotipo y el título */
 }
 
 body {

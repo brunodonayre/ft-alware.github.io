@@ -3,17 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título de la Página</title>
+    <title>Allware</title>
     <link rel="stylesheet" href="styles.css"> <!-- Enlaza tu archivo de estilos CSS si lo tienes -->
+    <style>
+        /* Estilos para el contenedor del iframe */
+        .iframe-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px; /* Ajusta la altura según tus necesidades */
+        }
+
+        /* Estilos para el iframe */
+        iframe {
+            width: 60%; /* Ajusta el ancho según tus necesidades */
+            height: 100%; /* Ajusta la altura según tus necesidades */
+        }
+    </style>
 </head>
 <body>
     <header>
         <img src="Logo_Nicovita.png" alt="Nombre de tu empresa">
-        <h1>Allware FT - Nicovita</h1>
+        <h1>Allware FT - Nicovita </h1>
         <nav>
             <!-- Menú de navegación -->
             <ul>
                 <li><a href="#">Inicio</a></li>
+                <a href="index_2.html">Ir a otra página</a>
                 <li><a href="#">Acerca de</a></li>
                 <li><a href="#">Servicios</a></li>
                 <li><a href="#">Contacto</a></li>
@@ -25,12 +41,14 @@
 
     <main>
         <section>
-            <h2>Aplicativos</h2>
-            <p>Contenido de la primera sección.</p>
+            <h2>Módulo de Gestión de Planta Piloto</h2>
+            <p>Sección para codificar dietas de desarrollo, materia prima y registrar movimientos de Stock.</p>
             <!-- Agrega un enlace a tu aplicación de Power Apps aquí -->
             <!--a href="https://apps.powerapps.com/play/e/default-3b16616d-f174-497a-a1ae-900d85106996/a/2329c993-02b8-4637-b547-46973cc3c102?tenantId=3b16616d-f174-497a-a1ae-900d85106996&hint=a32423b0-702a-400d-8baf-61c1a8bfc026&sourcetime=1694712342082" target="_blank">Ir a Gestión de Planta Piloto</a-->
             <!-- Agrega el iframe para tu aplicación de Power Apps aquí -->
-        <iframe src="https://apps.powerapps.com/play/e/default-3b16616d-f174-497a-a1ae-900d85106996/a/2329c993-02b8-4637-b547-46973cc3c102?tenantId=3b16616d-f174-497a-a1ae-900d85106996&hint=a32423b0-702a-400d-8baf-61c1a8bfc026&sourcetime=1694712342082" width="1066" height="605"></iframe>
+            <div class="iframe-container">
+            <iframe src="https://apps.powerapps.com/play/e/default-3b16616d-f174-497a-a1ae-900d85106996/a/2329c993-02b8-4637-b547-46973cc3c102?tenantId=3b16616d-f174-497a-a1ae-900d85106996&hint=a32423b0-702a-400d-8baf-61c1a8bfc026&sourcetime=1694712342082" width="1066" height="605"></iframe>
+            </div>
         </section>
 
         <section>
